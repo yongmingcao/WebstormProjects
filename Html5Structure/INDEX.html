@@ -1,0 +1,68 @@
+<!DOCTYPE html><!--区别于html4的声明-->
+<html>
+<head lang="en"><!--head表示不是在html网页中的正文显示的东西-->
+    <meta charset="UTF-8">
+    <!--meta标签，属性charset区别于html4-->
+    <title></title><!--浏览器上方显示的标题-->
+</head>
+<body><!--baody表示 显示在浏览器窗口内的内容-->
+<!--
+    header标签，5的新增标签，表示一块内容区域的标题部分，4中是 div  id=header表示
+    nav标签   5的新增内容，表示email中导航链接的部分
+    article标签  一个网页中 独立的内容，跟这个网页不相关的内容  引用etc.
+    section标签   页面中 一块内容区域，一个章节的页眉页脚
+    aside标签 表示与元素相关的辅助信息
+    footer页脚
+-->
+<!--标签详细介绍-->
+<!--article元素
+    一块可以被引用的部分 类似一篇博客etc.
+    标题  放到header中
+
+-->
+   <article>
+       <header>
+           <h3>我是Article</h3>
+           <p>
+               创建时间：<time pubdate ="pubdate">2015.4.5</time>
+           </p>
+
+       </header>
+       <p>
+          这是普通文本 <b>article是一个独立的区域，这是加粗文本</b>
+       </p>
+       <section>
+           <h3>读者评论</h3>
+          <article>
+              <header>
+                  <h4>读者：王建宇</h4>
+                  <p>
+                      <time pubdate datetime="2015.4.4">发表于2小时前</time>
+                  </p>
+              </header>
+              <p>
+                  文章不错！！！
+              </p>
+          </article>
+           <article>
+               <header>
+                   <h4>读者：小星星</h4>
+                   <p>
+                       <time pubdate datetime="2015.4.4">发表于2小时前</time>
+                   </p>
+               </header>
+               <p>
+                   文章VeryGood！！！
+               </p>
+           </article>
+
+       </section>
+       <footer>
+           <p>
+               <small>麦子学院版权所有</small>
+           </p>
+       </footer>
+   </article>
+
+</body>
+</html>
